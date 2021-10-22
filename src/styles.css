@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Ubuntu, "Helvetica Neue", sans-serif; }
+
+.add-video{
+    background: url(/assets/add_video.jpg) no-repeat center;
+    background-size: cover;
+}
+.manage-video{
+    background: linear-gradient(to right, #00000077, #00000077), url(/assets/manage_videos.jpg)  no-repeat center;
+    background-size: cover;
+}
+
+.login{
+    background: url(https://t4.ftcdn.net/jpg/02/82/35/81/360_F_282358112_5VXMxwkmCNU9Mu6UNsYJ6nEfZlzCgwBb.jpg) no-repeat center;
+    background-size: cover;
+ }
