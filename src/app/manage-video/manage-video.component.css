@@ -10,11 +10,13 @@
 
 .my-card-hover{
   transform: translateY(-10px);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(93, 203, 253, 0.25), 0 10px 10px rgba(241, 240, 137, 0.22);
+  
 
 }
 h1{
-  background-image: linear-gradient(to bottom right, #de99f0, #3cf86b, #167ff7, #c5ec16);
+  background-image: linear-gradient(to bottom right, #62ccec, #06bb33, #093b74, #c9b60d);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: auto;
 }
