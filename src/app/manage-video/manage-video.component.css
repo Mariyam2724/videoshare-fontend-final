@@ -1,13 +1,20 @@
-.user-info {
-  padding: 3rem 1rem;
+.user-info{
+  padding: 3rem 1rem ;
+  background: linear-gradient(to right-bottom, rgba(255, 0, 0, 0.11) rgba(0, 0, 255, 0.185)) center;
 }
 
-.mycard {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+.mycard{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transition-duration: 300ms;
 }
 
-.my-card-hover {
+.my-card-hover{
   transform: translateY(-10px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+h1{
+  background-image: linear-gradient(to bottom right, #de99f0, #3cf86b, #167ff7, #c5ec16);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
