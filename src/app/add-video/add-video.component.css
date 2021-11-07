@@ -1,11 +1,31 @@
 header{
     /* height: 15rem; */
     padding: 5rem;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.445)), url(https://i.ytimg.com/vi/8ZMxLZqL73M/maxresdefault.jpg) center no-repeat;
+    background: linear-gradient(to right, rgba(129, 125, 125, 0.404), rgba(0, 0, 0, 0.445)), url(https://i.ytimg.com/vi/8ZMxLZqL73M/maxresdefault.jpg) center no-repeat;
     background-size: cover;
 }
 
+.card{
+    background-color: rgb(191, 227, 241);
+}
 
 *{
     font-family: Ubuntu;
+}
+
+button{
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    /* background-color: blueviolet; */
+    background: linear-gradient(to right bottom, rgba(233, 14, 167, 0.822), rgba(134, 21, 226, 0.733),rgba(201, 101, 240, 0.575)) no-repeat;
+}
+
+button:hover{
+    background-color: aquamarine;
+    color: azure;
+    border: rgb(152, 222, 135);
+    border: 1px solid red;
 }

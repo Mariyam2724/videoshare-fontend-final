@@ -3,7 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { UserService } from '../service/user.service';
 import { VideoService } from '../service/video.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-video',
   templateUrl: './add-video.component.html',
@@ -18,7 +18,8 @@ export class AddVideoComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private videoservice: VideoService,
-    private userservice: UserService
+    private userservice: UserService,
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -53,7 +54,27 @@ export class AddVideoComponent implements OnInit {
     this.videoservice.addVideo(formdata).subscribe((res) => {
       console.log(res);
     });
+    if(this.videoForm.value.title)
+    {
+    Swal.fire({
+      icon: 'success',
+      text: 'Successfully!',
+      title: 'Video Added',
+    });
+    this.userservice.currentUser = event;
+    this.router.navigate(['/managevideo']);
   }
+  else{
+    Swal.fire({
+      icon: 'error',
+      text: 'No Success',
+      title: 'Video Not Added',
+    });
+
+  }
+    
+
+    }
 
   uploadThumbnail(event: any) {
     const formdata = new FormData();
